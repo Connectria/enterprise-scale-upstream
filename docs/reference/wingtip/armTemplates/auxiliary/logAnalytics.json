@@ -65,10 +65,10 @@
                 "scope": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'), '-management')]",
                 "parameters": {
                     "workspaceName": {
-                        "value": "[concat(parameters('topLevelManagementGroupPrefix'), '-la')]"
+                        "value": "[concat('la-', parameters('topLevelManagementGroupPrefix'))]"
                     },
                     "automationAccountName": {
-                        "value": "[concat(parameters('topLevelManagementGroupPrefix'), '-automation')]"
+                        "value": "[concat('automation-', parameters('topLevelManagementGroupPrefix'))]"
                     },
                     "workspaceRegion": {
                         "value": "[deployment().location]"
@@ -77,7 +77,7 @@
                         "value": "[deployment().location]"
                     },
                     "rgName": {
-                        "value": "[concat(parameters('topLevelManagementGroupPrefix'), '-mgmt')]"
+                        "value": "[concat('rg-mgmt-',parameters('topLevelManagementGroupPrefix'))]"
                     },
                     "retentionInDays": {
                         "value": "[parameters('retentionInDays')]"
