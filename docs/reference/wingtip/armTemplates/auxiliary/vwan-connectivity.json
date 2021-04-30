@@ -62,9 +62,9 @@
         }
     },
     "variables": {
-        "vWanName": "[concat(parameters('topLevelManagementGroupPrefix'), '-vwan-', parameters('location'))]",
-        "vpngwname": "[concat(parameters('topLevelManagementGroupPrefix'), '-vpngw-', parameters('location'))]",
-        "erGwName": "[concat(parameters('topLevelManagementGroupPrefix'), '-ergw-', parameters('location'))]",
+        "vWanName": "[concat( 'vwan-',parameters('topLevelManagementGroupPrefix'),'-', parameters('location'))]",
+        "vpngwname": "[concat( 'vpngw-',parameters('topLevelManagementGroupPrefix'),'-', parameters('location'))]",
+        "erGwName": "[concat( 'ergw-',parameters('topLevelManagementGroupPrefix'),'-', parameters('location'))]",
         "rgName": "[concat(parameters('topLevelManagementGroupPrefix'), '-connectivity')]",
         "vHubName": "[concat('vhub-',parameters('topLevelManagementGroupPrefix'), '-', parameters('location'))]",
         "azFwName": "[concat('fw-',parameters('topLevelManagementGroupPrefix'), '-', parameters('location'))]",
