@@ -530,7 +530,7 @@
                         "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', parameters('topLevelManagementGroupPrefix'), '-mgmt', '/providers/Microsoft.OperationalInsights/workspaces/', parameters('topLevelManagementGroupPrefix'), '-la'))]"
                     },
                     "ascExportResourceGroupName": {
-                        "value": "[concat(parameters('topLevelManagementGroupPrefix'), '-asc-export')]"
+                        "value": "[concat('rg-',parameters('topLevelManagementGroupPrefix'), '-asc-export')]"
                     },
                     "ascExportResourceGroupLocation": {
                         "value": "[deployment().location]"
