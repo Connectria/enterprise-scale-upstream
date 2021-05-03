@@ -295,7 +295,7 @@
                 "scope": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
                 "parameters": {
                     "logAnalytics_1": {
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-', parameters('topLevelManagementGroupPrefix'),'-mgmt' , '/providers/Microsoft.OperationalInsights/workspaces/', parameters('topLevelManagementGroupPrefix'), '-la'))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-', parameters('topLevelManagementGroupPrefix'),'-mgmt' , '/providers/Microsoft.OperationalInsights/workspaces/', 'la-', parameters('topLevelManagementGroupPrefix')))]"
                     }
                 }
             }
@@ -332,7 +332,7 @@
                 "scope": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
                 "parameters": {
                     "logAnalytics_1": {
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-', parameters('topLevelManagementGroupPrefix'),'-mgmt' ,  '/providers/Microsoft.OperationalInsights/workspaces/', parameters('topLevelManagementGroupPrefix'), '-la'))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/', 'rg-', parameters('topLevelManagementGroupPrefix'),'-mgmt' ,  '/providers/Microsoft.OperationalInsights/workspaces/', 'la-', parameters('topLevelManagementGroupPrefix')))]"
                     }
                 }
             }
@@ -733,7 +733,7 @@
                         "value": "[parameters('topLevelManagementGroupPrefix')]"
                     },
                     "workspaceResourceId":{
-                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/',  'rg-', parameters('topLevelManagementGroupPrefix'),'-mgmt','/providers/Microsoft.OperationalInsights/workspaces/', parameters('topLevelManagementGroupPrefix'), '-la'))]"
+                        "value": "[toLower(concat('/subscriptions/', parameters('managementSubscriptionId'), '/resourceGroups/',  'rg-', parameters('topLevelManagementGroupPrefix'),'-mgmt','/providers/Microsoft.OperationalInsights/workspaces/', 'la-',parameters('topLevelManagementGroupPrefix')))]"
                     }
                 }
             }
